@@ -1,0 +1,20 @@
+<script>
+
+    var mansapromiss=new Promise((fullfill,reject)=>{
+        setTimeout(()=>{
+            var err=true
+            if(!err){
+                fullfill('im fulling')
+            }else{
+                reject('not fullfilled')
+            }
+            
+        },2000)
+    })
+mansapromiss.then((data)=>{
+        console.log(data)
+        })
+        mansapromiss.catch((err)=>{
+            console.log(err)
+        }) 
+</script>

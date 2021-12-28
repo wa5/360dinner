@@ -1,0 +1,17 @@
+{
+  "name": "zeroconfig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "murshi": "webpack"
+  },
+  "keywords": [],
+  "author": "wa5",
+  "license": "ISC",
+ 
+  "devDependencies": {
+    "webpack-cli": "^4.9.1",
+    "webpack": "^5.64.4"
+  }
+}

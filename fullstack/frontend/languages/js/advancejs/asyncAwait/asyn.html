@@ -1,0 +1,13 @@
+<script>
+ async function fun(){
+var data= await fetch('https://api.github.com/users')
+var data2 =await data.text()
+return data2
+}
+
+fun().then((mydata)=>{
+   console.log(mydata)
+})
+
+
+</script>

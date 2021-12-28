@@ -1,0 +1,19 @@
+{
+  "students": [
+    {
+      "id": 2,
+      "name": "pratik",
+      "chocalte": "perk"
+    },
+    {
+      "id": 3,
+      "name": "sunada",
+      "chocalte": "dairy milk"
+    },
+    {
+      "id": "5",
+      "name": "hghg",
+      "chocalte": "sdh"
+    }
+  ]
+}

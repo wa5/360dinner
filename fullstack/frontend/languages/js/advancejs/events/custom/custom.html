@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+     <button id="root">click me</button>
+     <h1>result</h1>
+        
+        <script >
+var buton=document.getElementById('root')
+var h1=document.querySelector('h1')
+
+buton.addEventListener('click',()=>{
+    var ran=Math.floor(Math.random()*3)
+    var array=['red','green','blue']
+    var data={
+        number:ran,
+        backgroundColor:array[ran],
+        color:'white'
+    }
+changecolor(data)
+})
+
+function changecolor(data){
+  //  console.log(data)
+    var myevent=new CustomEvent('DbD',{
+        detail:data
+    })
+    h1.dispatchEvent(myevent)
+}
+h1.addEventListener('DbD',(e)=>{
+console.log(e.detail)
+let {number,backgroundColor,color}=e.detail
+h1.textContent=number
+h1.style.backgroundColor=backgroundColor
+h1.style.color=color
+})
+
+        </script>
+        
+        
+
+    </body>
+</html>
