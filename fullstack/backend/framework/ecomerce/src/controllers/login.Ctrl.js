@@ -1,11 +1,15 @@
 
-const sendmail=require('../helpers/sendingmail')
+const sendmail=require('../helpers/sendingmail');
+const insertdata = require('../services/datamanupulation.service');
 
 const getLogin = (req, res) => {
 const name=req.query.name
 const email=req.query.email
-const password=req.query.name
-console.log(name,email,password,req.query)
+const password=req.query.password
+
+insertdata(name,email,password)
+
+
 sendmail(email,name)
     res.render("login", { name: name,email:email,password:password });
   };

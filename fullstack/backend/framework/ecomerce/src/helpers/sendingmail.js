@@ -6,7 +6,7 @@ var tr=nodemailer.createTransport({
     service:'gmail',
     auth:{
         user:'waseemahmed116@gmail.com',
-        pass:''
+        pass:'1ac13cs034'
     }
 })
 var otp=sendotp()
